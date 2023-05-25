@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NexGraphX Module Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #F5F5F5;
+      color: #333333;
+    }
+    h1 {
+      color: #555555;
+    }
+    h2 {
+      color: #666666;
+      margin-top: 20px;
+    }
+    code {
+      font-family: Consolas, monospace;
+      background-color: #F0F0F0;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    pre {
+      background-color: #F0F0F0;
+      padding: 10px;
+      overflow-x: auto;
+    }
+    .function {
+      margin-top: 20px;
+    }
+    .function-name {
+      font-weight: bold;
+    }
+    .function-parameters {
+      margin-top: 5px;
+    }
+    .function-description {
+      margin-top: 10px;
+    }
+    .toc-link {
+      color: #0099CC;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .toc-link:hover {
+      text-decoration: underline;
+    }
+    .fade-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 153, 204, 0.7), rgba(0, 153, 204, 0));
+      pointer-events: none;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <h1>NexGraphX Module Documentation</h1>
+
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a class="toc-link" href="#gui-function">gui</a></li>
+    <li><a class="toc-link" href="#gprint-function">gprint</a></li>
+    <li><a class="toc-link" href="#gres-function">gres</a></li>
+    <li><a class="toc-link" href="#gui_background-function">gui_background</a></li>
+    <li><a class="toc-link" href="#gui_text_color-function">gui_text_color</a></li>
+    <li><a class="toc-link" href="#gui_text_font-function">gui_text_font</a></li>
+    <li><a class="toc-link" href="#gui_dis-function">gui_dis</a></li>
+    <li><a class="toc-link" href="#gprint_b-function">gprint_b</a></li>
+    <li><a class="toc-link" href="#run-function">run</a></li>
+  </ul>
+
+  <h2 id="gui-function" class="function">
+    <span class="function-name">gui</span>
+    <span class="function-parameters">(title, width, height)</span>
+  </h2>
+  <div class="function-description">
+    <p>Sets up the GUI window with a title and dimensions.</p>
+  </div>
+
+  <h2 id="gprint-function" class="function">
+    <span class="function-name">gprint</span>
+    <span class="function-parameters">(text)</span>
+  </h2>
+  <div class="function-description">
+    <p>Prints the provided text in the GUI window.</p>
+  </div>
+
+  <h2 id="gres-function" class="function">
+    <span class="function-name">gres</span>
+    <span class="function-parameters">(True or False)</span>
+  </h2>
+  <div class="function-description">
+    <p>Sets the GUI window's resizable property.</p>
+  </div>
+
+  <h2 id="gui_background-function" class="function">
+    <span class="function-name">gui_background</span>
+    <span class="function-parameters">(color)</span>
+  </h2>
+  <div class="function-description">
+    <p>Sets the background color of the GUI window.</p>
+  </div>
+
+  <h2 id="gui_text_color-function" class="function">
+    <span class="function-name">gui_text_color</span>
+    <span class="function-parameters">(color)</span>
+  </h2>
+  <div class="function-description">
+    <p>Sets the text color in the GUI window.</p>
+  </div>
+
+  <h2 id="gui_text_font-function" class="function">
+    <span class="function-name">gui_text_font</span>
+    <span class="function-parameters">(font, size)</span>
+  </h2>
+  <div class="function-description">
+    <p>Sets the font for the text in the GUI window.</p>
+  </div>
+
+  <h2 id="gui_dis-function" class="function">
+    <span class="function-name">gui_dis</span>
+    <span class="function-parameters">()</span>
+  </h2>
+  <div class="function-description">
+    <p>Disables the text box in the GUI window.</p>
+  </div>
+
+  <h2 id="gprint_b-function" class="function">
+    <span class="function-name">gprint_i</span>
+    <span class="function-parameters">(image)</span>
+  </h2>
+  <div class="function-description">
+    <p>Adds an image to the GUI window.</p>
+  </div>
+
+  <h2 id="run-function" class="function">
+    <span class="function-name">run</span>
+    <span class="function-parameters">()</span>
+  </h2>
+  <div class="function-description">
+    <p>Starts the GUI event loop.</p>
+  </div>
+
+  <h2>Usage Example</h2>
+  <pre><code>from pynexs import *
+
+# Initialize GUI
+gui("My App", 800, 600)
+
+# Print text
+gprint("Hello, world!")
+
+# Set resizable
+gres(True)
+
+# Set background color
+gui_background("#F0F0F0")
+
+# Set text color
+gui_text_color("red")
+
+# Set text font
+gui_text_font("Arial", 12)
+
+# Disable text box
+gui_dis()
+
+# Add an image
+gprint_i(image_object)
+
+# Run the application
+run()
+</code></pre>
+
+<div class="fade-background"></div>
+
+</body>
+</html>
