@@ -1,2 +1,2 @@
 # NexGraphX
-NexGraphX is a GUI library for Python
+NexGraphX is an open-source, GUI library for Python
