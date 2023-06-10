@@ -3,6 +3,7 @@ from tkinter.font import *
 
 win = Tk()
 win.configure(bg="#0C0C0C")
+tb = None
 
 def gui(a, b, c):
     win.title(a)
